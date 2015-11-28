@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System.Diagnostics;
+using System;
 
 public class RaceManager : MonoBehaviour 
 {
@@ -16,10 +18,13 @@ public class RaceManager : MonoBehaviour
 	[SerializeField]
 	private int _endCountdown;
 
+	private Stopwatch watch;
+
 	// Use this for initialization
 	void Awake () 
 	{
 		CarActivation(false);
+		watch = new Stopwatch();
 	}
 	
 	void Start()
@@ -39,6 +44,7 @@ public class RaceManager : MonoBehaviour
 		while (count > 0);
 		_announcement.text = "Partez!";
 		CarActivation(true);
+		watch.Start();
 		yield return new WaitForSeconds(1.0f);
 		_announcement.text = "";
 	}
@@ -51,6 +57,7 @@ public class RaceManager : MonoBehaviour
 	IEnumerator EndRaceImpl(string winner)
 	{
 		CarActivation(false);
+		watch.Stop();
 		_announcement.fontSize = 20;
 		int count = _endCountdown;
 		do 
@@ -61,7 +68,26 @@ public class RaceManager : MonoBehaviour
 		}
 		while (count > 0);
 
-		Application.LoadLevel("boot");
+		// === Fin de la course ===
+
+		// --- Récupérer les positions des joueurs ---
+
+		GameObject gameManager = GameObject.Find("Game Manager") as GameObject;
+		CheckpointManager cpManager = gameManager.GetComponent<CheckpointManager>() as CheckpointManager;
+		CarController[] orderedCars = cpManager.getCarsInOrder(new List<string>(new string[] {"Joueur 2"}));
+
+		// --- Stocker positions et temps du premier dans ScoreData ---
+
+		GameObject score = GameObject.Find("ScoreData") as GameObject;
+		ScoreData scoreData = score.GetComponent<ScoreData>() as ScoreData;
+
+		scoreData.setFirstToBeSure(winner);
+		scoreData.setCarsInOrder(orderedCars);
+		scoreData.setTimeFirst(TimeSpan.FromMilliseconds(watch.ElapsedMilliseconds));
+		
+		// --- Lancer la scène de fin ---
+
+		Application.LoadLevel("endScreen");
 	}
 
 	public void Announce(string announcement, float duration = 2.0f)
