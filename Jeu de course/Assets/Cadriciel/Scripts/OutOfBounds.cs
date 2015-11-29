@@ -5,6 +5,9 @@ public class OutOfBounds : MonoBehaviour
 {
 	private Transform[] _path_v;
 
+	[SerializeField]
+	private bool edgeOnly = false;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -24,6 +27,19 @@ public class OutOfBounds : MonoBehaviour
 
 	void OnTriggerEnter(Collider col)
 	{
+		if (!edgeOnly)
+			trigger(col);
+	}
+
+	void OnTriggerExit(Collider col)
+	{
+		if (edgeOnly)
+			trigger(col);
+	}
+
+	void trigger(Collider col)
+	{
+		Debug.Log("replacement :derp:derp:");
 		// === Voiture : replacer au Waypoint le plus proche ===
 
 		if (col.attachedRigidbody != null && col.attachedRigidbody.tag == "Player")
@@ -64,6 +80,5 @@ public class OutOfBounds : MonoBehaviour
 		{
 			Destroy(col.gameObject);
 		}
-
 	}
 }
