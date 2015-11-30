@@ -39,7 +39,6 @@ public class OutOfBounds : MonoBehaviour
 
 	void trigger(Collider col)
 	{
-		Debug.Log("replacement :derp:derp:");
 		// === Voiture : replacer au Waypoint le plus proche ===
 
 		if (col.attachedRigidbody != null && col.attachedRigidbody.tag == "Player")
