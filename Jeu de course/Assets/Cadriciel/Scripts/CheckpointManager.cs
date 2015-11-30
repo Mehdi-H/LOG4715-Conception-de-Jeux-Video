@@ -21,7 +21,7 @@ public class CheckpointManager : MonoBehaviour
 	{
 		public int lap;
 		public int checkPoint;
-		public int position;
+		//public int position;
 	}
 
 	private int _currentMaxLap = 0; // garder la trace du tour le plus avancé
@@ -56,7 +56,7 @@ public class CheckpointManager : MonoBehaviour
 		CarController[] cars = getCarsInOrder ();
 		for (int i = 0 ; i < cars.Length ; i++)
 		{
-			Vector3 velo = cars[i].rigidbody.velocity;
+			//Vector3 velo = cars[i].rigidbody.velocity;
 			float facteur = Mathf.Log(i+10, 10); // Premier = 1 : pas de changement
 			cars[i].setMaxSpeedFactor(facteur);
 		}
