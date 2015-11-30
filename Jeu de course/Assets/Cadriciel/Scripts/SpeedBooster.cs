@@ -45,6 +45,7 @@ public class SpeedBooster : MonoBehaviour
 			_joueur.rigidbody.AddForce(_joueur.forward * boostForce, ForceMode.Impulse);
 
 			// Ajouter une courte traînée de feu derrière le joueur :
+
 			_fireObj = Instantiate(_fireModel) as GameObject;
 			enabled = true;
 			_watch.Start();
