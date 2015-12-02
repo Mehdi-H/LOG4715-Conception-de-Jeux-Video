@@ -36,8 +36,8 @@ public class ProjectileBehavior : MonoBehaviour
 	private Vector3 force;
 	private Vector3 oldVelocity;
 
-	// Path following :
-	private Transform[] _path_p, _path_v;
+    // Path following :
+    private Transform[] _path_p, _path_v;
 	private float reachDist;
 	private int currentPoint = 0;
 
@@ -47,7 +47,7 @@ public class ProjectileBehavior : MonoBehaviour
 	// Rouge/Bleu :
 	private float turn, maxDistance;
 	private Transform cible, premiereVoiture;
-	private bool cibleAcquise = false;
+	//private bool cibleAcquise = false;
 	private float maxAngle;
 	private LayerMask voituresLayer;
 
@@ -288,7 +288,7 @@ public class ProjectileBehavior : MonoBehaviour
 
 			// --- Exploser sur la voiture touchée ---
 			
-			string nomVoiture = collision.gameObject.name;
+			//string nomVoiture = collision.gameObject.name;
 			Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
 
 			if (rb != null)
