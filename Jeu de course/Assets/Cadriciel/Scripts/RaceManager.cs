@@ -119,4 +119,9 @@ public class RaceManager : MonoBehaviour
 	public GameObject getCarContainer() {
 		return _carContainer;
 	}
+
+	public int getTimeToStart()
+	{
+		return _timeToStart;
+    }
 }

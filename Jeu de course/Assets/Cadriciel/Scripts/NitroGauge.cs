@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NitroGauge : MonoBehaviour {
+public class NitroGauge : MonoBehaviour
+{
+	// ==========================================
+	// == Attributs
+	// ==========================================
 
 	[SerializeField]
 	private float progress = 100;
@@ -11,25 +15,37 @@ public class NitroGauge : MonoBehaviour {
 
 	[SerializeField]
 	private GUITexture _nitro;
-	private GameObject _fireModel;
-	private GameObject _fireObj;
 
-	// Use this for initialization
-	void Start () {
+	private CarFX fx;
+	private bool flag; // évite d'appeler fx.enableFX à chaque frame quand il n'y a pas de changement
+
+	// ==========================================
+	// == Start
+	// ==========================================
+
+	void Start ()
+	{
 		this.enabled = false;
 		StartCoroutine (enableNitro());
 
-		_fireModel = Resources.Load("Fire1") as GameObject;
-		_fireObj = Instantiate(_fireModel) as GameObject;
-		setFireRenderer(false);
+		fx = GetComponent<CarFX>() as CarFX;
 	}
 
-	IEnumerator enableNitro(){
-		yield return new WaitForSeconds(3);
+	IEnumerator enableNitro()
+	{
+		// Attendre le début de la course pour activer la nitro :
+
+		GameObject gm = GameObject.Find("Game Manager") as GameObject;
+		RaceManager rm = gm.GetComponent<RaceManager>() as RaceManager;
+		yield return new WaitForSeconds(rm.getTimeToStart());
+
 		this.enabled = true;
 	}
-	
-	// Update is called once per frame
+
+	// ==========================================
+	// == Update
+	// ==========================================
+
 	void Update () {
 
 		if (progress >= 100)
@@ -40,15 +56,19 @@ public class NitroGauge : MonoBehaviour {
 
 		if (Input.GetButton("Nitro") && progress > 10)
 		{
-			transform.rigidbody.AddForce (transform.forward * nitroForce);
+			transform.rigidbody.AddForce(transform.forward * nitroForce);
 			progress -= 3;
 
-            _fireObj.transform.position = transform.position;
-			setFireRenderer(true);
+			if (!flag)
+			{
+				fx.enableFX(CarFX.FX.NITRO, true);
+				flag = true;
+			}
 		}
-		else
+		else if (flag)
 		{
-			setFireRenderer(false);
+			fx.enableFX(CarFX.FX.NITRO, false);
+			flag = false;
 		}
 
 		if (Input.GetButton("Nitro") && progress <= 10) {
@@ -59,13 +79,6 @@ public class NitroGauge : MonoBehaviour {
 		progress += 0.5f;
 
 		_nitro.pixelInset = new Rect(_nitro.pixelInset.x, _nitro.pixelInset.y, progress, _nitro.pixelInset.height);
-	}
-
-	void setFireRenderer(bool mode)
-	{
-		_fireObj.transform.Find("OuterCore").renderer.enabled = mode;
-		_fireObj.transform.Find("InnerCore").renderer.enabled = mode;
-		_fireObj.transform.Find("smoke").renderer.enabled = mode;
 	}
 }
 

@@ -7,38 +7,26 @@ public class SpeedBooster : MonoBehaviour
 	[SerializeField]
 	private float boostForce = 100.0f;
 
-	private GameObject _fireModel, _fireObj;
-
 	private Transform _joueur;
 	private Stopwatch _watch;
 	[SerializeField] private long _fireDurationMs = 2000;
 
+	private CarFX fx;
+
 	// Use this for initialization
 	void Start ()
 	{
-		_fireModel = Resources.Load("Fire1") as GameObject;
-		_watch = new Stopwatch();
-		enabled = false;
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		_fireObj.transform.position = _joueur.position;
-
-		if (_watch.ElapsedMilliseconds >= _fireDurationMs)
-		{
-			Destroy(_fireObj);
-			_watch.Stop();
-			_watch.Reset();
-			enabled = false;
-		}
+		
 	}
 
 	void OnTriggerEnter (Collider col)
 	{
 		if (col.attachedRigidbody != null && col.attachedRigidbody.tag == "Player")
 		{
+			// Récupérer le manager d'effets de la voiture :
+
+			fx = col.gameObject.GetComponentInParent<CarFX>() as CarFX;
+
 			// Ajouter une impulsion au joueur :
 
 			_joueur = col.attachedRigidbody.transform;
@@ -46,9 +34,7 @@ public class SpeedBooster : MonoBehaviour
 
 			// Ajouter une courte traînée de feu derrière le joueur :
 
-			_fireObj = Instantiate(_fireModel) as GameObject;
-			enabled = true;
-			_watch.Start();
+			fx.enableFX(CarFX.FX.BOOST, true, 2000);
 		}
 	}
 }

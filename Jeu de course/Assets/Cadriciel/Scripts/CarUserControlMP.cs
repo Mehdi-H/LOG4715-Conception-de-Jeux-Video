@@ -145,7 +145,13 @@ public class CarUserControlMP : MonoBehaviour
 	void OnCollisionEnter(Collision theCollision)
 	{
 		string rootName = theCollision.transform.root.name;
-		string parentName = theCollision.transform.parent.name;
+		string parentName = "";
+
+        if (theCollision.transform.parent != null)
+			parentName = theCollision.transform.parent.name;
+		else
+			return;
+
 		if (rootName == "Cars")
 		{
 			// On comptabilise la figure

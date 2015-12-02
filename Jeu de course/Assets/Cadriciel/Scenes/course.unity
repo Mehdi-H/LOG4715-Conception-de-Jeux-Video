@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &1550275
 GameObject:
@@ -4981,6 +4980,10 @@ Prefab:
       propertyPath: m_Name
       value: SpeedBooster8
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 775188373}
@@ -5496,7 +5499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &205820786
 Renderer:
   m_ObjectHideFlags: 0
@@ -6834,7 +6837,6 @@ MonoBehaviour:
   m_LightmapIndex: -1
   m_LightmapSize: 1024
   m_DrawTreesAndFoliage: 1
-  m_CollectDetailPatches: 1
   m_MaterialTemplate: {fileID: 0}
 --- !u!4 &227832305
 Transform:
@@ -12274,6 +12276,10 @@ Prefab:
       propertyPath: m_Name
       value: SpeedBooster4
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 635314948}
@@ -12398,6 +12404,10 @@ Prefab:
     - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_Name
       value: SpeedBooster2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -12863,6 +12873,10 @@ Prefab:
     - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_Name
       value: SpeedBooster5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -13542,6 +13556,7 @@ GameObject:
   - 114: {fileID: 481286561}
   - 114: {fileID: 481286562}
   - 114: {fileID: 481286563}
+  - 114: {fileID: 481286564}
   m_Layer: 8
   m_Name: Joueur 1
   m_TagString: Player
@@ -13805,6 +13820,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpForce: 10
   _airControlRotation: 3
+--- !u!114 &481286564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481286549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100002, guid: 2acf9c8e812eff6459715d2b3dce2c96, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1 &483842611
 GameObject:
   m_ObjectHideFlags: 0
@@ -14231,7 +14259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &501403778
 Renderer:
   m_ObjectHideFlags: 0
@@ -17568,7 +17596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &619515580
 Renderer:
   m_ObjectHideFlags: 0
@@ -18005,7 +18033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &635314951
 Renderer:
   m_ObjectHideFlags: 0
@@ -21235,7 +21263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &775188376
 Renderer:
   m_ObjectHideFlags: 0
@@ -27804,7 +27832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &905791708
 Renderer:
   m_ObjectHideFlags: 0
@@ -29572,6 +29600,7 @@ GameObject:
   - 114: {fileID: 981142454}
   - 114: {fileID: 981142461}
   - 114: {fileID: 981142462}
+  - 114: {fileID: 981142463}
   m_Layer: 8
   m_Name: Voiture orange
   m_TagString: Player
@@ -29786,6 +29815,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &981142463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 981142452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1 &982943094
 GameObject:
   m_ObjectHideFlags: 0
@@ -38739,6 +38781,10 @@ Prefab:
       propertyPath: m_Name
       value: SpeedBooster1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 619515577}
@@ -40581,6 +40627,10 @@ Prefab:
       propertyPath: m_Name
       value: SpeedBooster7
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 205820783}
@@ -41696,6 +41746,7 @@ GameObject:
   - 114: {fileID: 1368033983}
   - 114: {fileID: 1368033982}
   - 114: {fileID: 1368033989}
+  - 114: {fileID: 1368033990}
   m_Layer: 8
   m_Name: Voiture jaune
   m_TagString: Player
@@ -41910,6 +41961,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &1368033990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368033979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1 &1369902831
 GameObject:
   m_ObjectHideFlags: 0
@@ -42224,6 +42288,10 @@ Prefab:
     - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_Name
       value: SpeedBooster3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -48178,7 +48246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &1617450832
 Renderer:
   m_ObjectHideFlags: 0
@@ -48726,6 +48794,7 @@ GameObject:
   - 114: {fileID: 1635867386}
   - 114: {fileID: 1635867385}
   - 114: {fileID: 1635867392}
+  - 114: {fileID: 1635867393}
   m_Layer: 8
   m_Name: Voiture rouge
   m_TagString: Player
@@ -48940,6 +49009,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &1635867393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1635867382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1001 &1636201921
 Prefab:
   m_ObjectHideFlags: 0
@@ -49245,6 +49327,10 @@ Prefab:
     - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_Name
       value: SpeedBooster6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: boostForce
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -54097,6 +54183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joueur: {fileID: 481286550}
+  Cars: {fileID: 0}
 --- !u!1001 &1866592965
 Prefab:
   m_ObjectHideFlags: 0
@@ -54688,6 +54775,7 @@ GameObject:
   - 114: {fileID: 1881066733}
   - 114: {fileID: 1881066732}
   - 114: {fileID: 1881066741}
+  - 114: {fileID: 1881066742}
   m_Layer: 8
   m_Name: Voiture bleue
   m_TagString: Player
@@ -54902,6 +54990,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &1881066742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881066731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1 &1885422050
 GameObject:
   m_ObjectHideFlags: 0
@@ -58848,6 +58949,7 @@ GameObject:
   - 114: {fileID: 1977983685}
   - 114: {fileID: 1977983689}
   - 114: {fileID: 1977983692}
+  - 114: {fileID: 1977983693}
   m_Layer: 8
   m_Name: Joueur 2
   m_TagString: Player
@@ -59030,6 +59132,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &1977983693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977983683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1 &1981173949
 GameObject:
   m_ObjectHideFlags: 0
@@ -60760,6 +60875,7 @@ GameObject:
   - 114: {fileID: 2042105154}
   - 114: {fileID: 2042105153}
   - 114: {fileID: 2042105160}
+  - 114: {fileID: 2042105161}
   m_Layer: 8
   m_Name: Voiture verte
   m_TagString: Player
@@ -60974,6 +61090,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &2042105161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042105150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1001 &2046631047
 Prefab:
   m_ObjectHideFlags: 0
@@ -61406,7 +61535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe622a402462cd449b9c8a9d315b83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boostForce: 20
+  boostForce: 15
 --- !u!23 &2059013353
 Renderer:
   m_ObjectHideFlags: 0
@@ -62307,6 +62436,7 @@ GameObject:
   - 114: {fileID: 2099699820}
   - 114: {fileID: 2099699819}
   - 114: {fileID: 2099699826}
+  - 114: {fileID: 2099699827}
   m_Layer: 8
   m_Name: Voiture blanche
   m_TagString: Player
@@ -62521,6 +62651,19 @@ MonoBehaviour:
   _maxVie: 100
   _seuilRalentissement: 30
   _pourcentageRalentissement: .300000012
+--- !u!114 &2099699827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099699816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2446f481eff323d4cac34364c0506570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nitroFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
+  boostFireModel: {fileID: 100006, guid: 8060af10606c05b4d8381392018145ea, type: 2}
 --- !u!1 &2102328284
 GameObject:
   m_ObjectHideFlags: 0
