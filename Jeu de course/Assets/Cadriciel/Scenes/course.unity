@@ -4976,6 +4976,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 775188373}
@@ -5461,7 +5465,7 @@ GameObject:
   - 23: {fileID: 205820786}
   - 114: {fileID: 205820785}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9685,7 +9689,7 @@ Transform:
   - {fileID: 951606784}
   - {fileID: 412166281}
   m_Father: {fileID: 1592390766}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1001 &327082557
 Prefab:
   m_ObjectHideFlags: 0
@@ -12264,6 +12268,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 635314948}
@@ -12384,6 +12392,10 @@ Prefab:
     - target: {fileID: 400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_LocalScale.x
       value: 3.04492927
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -12845,6 +12857,10 @@ Prefab:
     - target: {fileID: 400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -14183,7 +14199,7 @@ GameObject:
   - 23: {fileID: 501403778}
   - 114: {fileID: 501403777}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17520,7 +17536,7 @@ GameObject:
   - 23: {fileID: 619515580}
   - 114: {fileID: 619515579}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17957,7 +17973,7 @@ GameObject:
   - 23: {fileID: 635314951}
   - 114: {fileID: 635314950}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21187,7 +21203,7 @@ GameObject:
   - 23: {fileID: 775188376}
   - 114: {fileID: 775188375}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27756,7 +27772,7 @@ GameObject:
   - 23: {fileID: 905791708}
   - 114: {fileID: 905791707}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38717,6 +38733,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 619515577}
@@ -40555,6 +40575,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
   m_RootGameObject: {fileID: 205820783}
@@ -42194,6 +42218,10 @@ Prefab:
     - target: {fileID: 400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_LocalScale.z
       value: 2.79138088
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -47546,8 +47574,8 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1998556082}
-  - {fileID: 1770808374}
   - {fileID: 324561746}
+  - {fileID: 1770808374}
   m_Father: {fileID: 1540650664}
   m_RootOrder: 4
 --- !u!1 &1598675794
@@ -48118,7 +48146,7 @@ GameObject:
   - 23: {fileID: 1617450832}
   - 114: {fileID: 1617450831}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49211,6 +49239,10 @@ Prefab:
     - target: {fileID: 400000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
+      propertyPath: m_Name
+      value: SpeedBooster6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4573c1dc19b3af940adacc9ff81a3e06, type: 2}
@@ -51962,7 +51994,7 @@ Transform:
   - {fileID: 1692000836}
   - {fileID: 2058445899}
   m_Father: {fileID: 1592390766}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1775067499
 GameObject:
   m_ObjectHideFlags: 0
@@ -61329,7 +61361,7 @@ GameObject:
   - 23: {fileID: 2059013353}
   - 114: {fileID: 2059013352}
   m_Layer: 0
-  m_Name: SpeedBooster
+  m_Name: SpeedBooster3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

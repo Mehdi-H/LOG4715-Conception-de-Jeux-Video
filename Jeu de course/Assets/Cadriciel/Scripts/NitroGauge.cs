@@ -43,8 +43,8 @@ public class NitroGauge : MonoBehaviour {
 			transform.rigidbody.AddForce (transform.forward * nitroForce);
 			progress -= 3;
 
-			setFireRenderer(true);
             _fireObj.transform.position = transform.position;
+			setFireRenderer(true);
 		}
 		else
 		{
