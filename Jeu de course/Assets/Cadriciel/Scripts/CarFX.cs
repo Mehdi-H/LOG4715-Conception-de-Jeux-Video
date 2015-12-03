@@ -75,7 +75,7 @@ public class CarFX : MonoBehaviour
 
 		public void setRenderer()
 		{
-			UnityEngine.Debug.Log("Let me enable (" + enabled + ") this renderer for you, kind sir.");
+			// UnityEngine.Debug.Log("Let me enable (" + enabled + ") this renderer for you, kind sir.");
 
 			Renderer[] children = obj.GetComponentsInChildren<Renderer>() as Renderer[];
 
