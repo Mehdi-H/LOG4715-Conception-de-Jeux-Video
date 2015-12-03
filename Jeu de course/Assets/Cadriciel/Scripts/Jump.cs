@@ -13,7 +13,7 @@ public class Jump : MonoBehaviour
 	[SerializeField]
 	private float _airControlRotation = 3.0f;
 
-	private bool grounded;
+	private bool grounded, flag;
 
 	// ==========================================
 	// == FixedUpdate
@@ -67,17 +67,34 @@ public class Jump : MonoBehaviour
 
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.gameObject.name == "Track")
+		if (col.transform.root.name == "Terrain" || col.transform.root.name == "Grounded Material")
 		{
+			flag = true;
 			grounded = true;
 		}
 	}
 
 	void OnCollisionExit(Collision col)
 	{
-		if (col.gameObject.name == "Track")
+		if (col.transform.root.name == "Terrain" || col.transform.root.name == "Grounded Material")
 		{
-			grounded = false;
+			flag = false;
+			StartCoroutine(delayedGrounding(0.3f, false));
+		}
+	}
+
+	IEnumerator delayedGrounding(float delay, bool isGrounded)
+	{
+		Debug.Log("En instance de dé-solage");
+		yield return new WaitForSeconds(delay);
+		if (!flag)
+		{
+			grounded = isGrounded;
+			Debug.Log("Dé-solé : " + grounded);
+		}
+		else
+		{
+			Debug.Log("Désolé je te dé-sole pas : " + grounded);
 		}
 	}
 }
