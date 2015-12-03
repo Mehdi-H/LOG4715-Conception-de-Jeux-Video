@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cadriciel\Scripts\CarFX.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\CarUserControlMP.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\Checkpoint.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\CheckpointManager.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\Cadriciel\Scripts\ProjectileBehavior.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\ProjectileManager.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\RaceManager.cs" />
+     <Compile Include="Assets\Cadriciel\Scripts\ScoreData.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\SpeedBooster.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\Speedometer.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\StartScreenManager.cs" />
@@ -67,7 +69,7 @@
      <Compile Include="Assets\Cadriciel\Scripts\Vie.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\Virage.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\drawPosition.cs" />
-     <Compile Include="Assets\CarFX.cs" />
+     <Compile Include="Assets\DesertFortressPack\Scripts\open_door.cs" />
      <Compile Include="Assets\Sample Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\Sample Assets\Cameras\Scripts\AutoCam.cs" />
      <Compile Include="Assets\Sample Assets\Cameras\Scripts\FreeLookCam.cs" />
@@ -139,7 +141,6 @@
      <Compile Include="Assets\Sample Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
      <Compile Include="Assets\Sample Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\Sample Assets\Vehicles\Car\Scripts\Wheel.cs" />
-     <Compile Include="Assets\ScoreData.cs" />
      <Compile Include="Assets\drawPosition.cs" />
      <None Include="Assets\Sample Assets\Effects\Toon Shading\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Sample Assets\Prototyping\Shaders\WorldCoord Diffuse.shader" />
@@ -150,6 +151,7 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Shaders\Coord.shader" />
      <None Include="Assets\Sample Assets\Effects\Image Effects (Pro Only)\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Damaged_old_van\readme.txt" />
      <None Include="Assets\Sample Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Sample Assets\Effects\Projectors\Shaders\Projector Additive.shader" />
      <None Include="Assets\Sample Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />

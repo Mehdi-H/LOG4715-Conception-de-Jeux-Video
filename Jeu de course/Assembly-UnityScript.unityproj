@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DesertFortressPack\Scripts\open_door.js" />
      <Compile Include="Assets\Sample Assets\Effects\Image Effects (Pro Only)\Scripts\DepthOfFieldScatter.js" />
      <Compile Include="Assets\Sample Assets\Effects\Image Effects (Pro Only)\Scripts\PostEffectsBase.js" />
      <Compile Include="Assets\Sample Assets\Utility\DragRigidbody.js" />
@@ -59,6 +60,7 @@
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Shaders\Coord.shader" />
      <None Include="Assets\Sample Assets\Effects\Image Effects (Pro Only)\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Damaged_old_van\readme.txt" />
      <None Include="Assets\Sample Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Sample Assets\Effects\Projectors\Shaders\Projector Additive.shader" />
      <None Include="Assets\Sample Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
