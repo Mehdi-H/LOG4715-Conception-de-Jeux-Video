@@ -18,7 +18,6 @@ public class LoopAnimation : MonoBehaviour
 	{
 		if (!_animation.IsPlaying(animationName))
 		{
-			Debug.Log("recommence");
 			_animation.Play(animationName);
 		}
 	}
