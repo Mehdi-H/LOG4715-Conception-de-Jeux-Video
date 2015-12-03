@@ -67,16 +67,23 @@ public class Jump : MonoBehaviour
 
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.transform.root.name == "Terrain" || col.transform.root.name == "Grounded Material")
+		if (flag)
+			return; // collision avec un mur
+
+		if (col.gameObject.name == "Track" || col.transform.root.name == "Grounded Material")
 		{
 			flag = true;
 			grounded = true;
+			Debug.Log("Solé : " + grounded);
 		}
 	}
 
 	void OnCollisionExit(Collision col)
 	{
-		if (col.transform.root.name == "Terrain" || col.transform.root.name == "Grounded Material")
+		if (!flag)
+			return;
+
+		if (col.gameObject.name == "Track" || col.transform.root.name == "Grounded Material")
 		{
 			flag = false;
 			StartCoroutine(delayedGrounding(0.3f, false));
@@ -85,16 +92,23 @@ public class Jump : MonoBehaviour
 
 	IEnumerator delayedGrounding(float delay, bool isGrounded)
 	{
-		Debug.Log("En instance de dé-solage");
-		yield return new WaitForSeconds(delay);
+		Debug.Log("Ah ? ...");
+
+		float count = 0;
+		while (!flag && count < delay)
+		{
+			count += 0.1f;
+			yield return new WaitForSeconds(0.1f);
+		}
+		
 		if (!flag)
 		{
 			grounded = isGrounded;
-			Debug.Log("Dé-solé : " + grounded);
+			Debug.Log("... en l'air ! (" + grounded + ")");
 		}
 		else
 		{
-			Debug.Log("Désolé je te dé-sole pas : " + grounded);
+			Debug.Log("...à terre ! (" + grounded + ")");
 		}
 	}
 }
