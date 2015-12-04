@@ -64,6 +64,7 @@
      <Compile Include="Assets\Cadriciel\Scripts\ProjectileManager.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\RaceManager.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\ScoreData.cs" />
+     <Compile Include="Assets\Cadriciel\Scripts\SkeletonAttackManager.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\SpeedBooster.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\Speedometer.cs" />
      <Compile Include="Assets\Cadriciel\Scripts\StartScreenManager.cs" />
