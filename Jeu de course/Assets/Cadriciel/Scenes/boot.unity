@@ -149,7 +149,7 @@ GUIText:
   m_GameObject: {fileID: 1200897201}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Hello Jack
+  m_Text: Track Path 3
   m_Anchor: 4
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -161,7 +161,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4285098345
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1200897203
@@ -225,7 +225,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .764705896, g: .756174624, b: .455449849, a: .0196078438}
+  m_BackGroundColor: {r: .764705896, g: .764705896, b: .450980395, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

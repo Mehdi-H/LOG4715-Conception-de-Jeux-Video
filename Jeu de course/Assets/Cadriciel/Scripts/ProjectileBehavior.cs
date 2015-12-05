@@ -302,10 +302,9 @@ public class ProjectileBehavior : MonoBehaviour
 
 		// === Collision avec un mur ===
 
-		else if (trans != null && trans.parent != null && trans.parent.name != null
-		         && (trans.parent.name == "Inner wall" 
-		         || trans.parent.name == "Outer wall"
-		         || trans.parent.name == "Obstacles"))
+		else if (trans != null && trans.parent != null && trans.parent.parent != null
+		         && (trans.parent.parent.name == "Inner wall" 
+		         || trans.parent.parent.name == "Outer wall"))
 		{
 			// --- Carapace Verte : rebondir sur le mur ---
 
@@ -352,9 +351,9 @@ public class ProjectileBehavior : MonoBehaviour
 
 			// --- Desctruction des murs internes et des obstacles ---
 
-			if (trans.parent.name == "Inner wall" || trans.parent.name == "Obstacles")
+			if (trans.parent.parent.name == "Inner wall")
 			{
-				MeshRenderer rend = trans.GetComponent<MeshRenderer>();
+				MeshRenderer rend = trans.parent.GetComponentInChildren<MeshRenderer>();
 
 				// Déterminer le Material courant :
 				for (int i = 0 ; i < wall_materials.Length ; i++)
@@ -363,7 +362,7 @@ public class ProjectileBehavior : MonoBehaviour
 					{
 						// Si c'est le dernier Material : détruire l'objet
 						if (i == wall_materials.Length - 1) {
-							Destroy(collision.gameObject);
+							Destroy(trans.parent.gameObject);
 							break;
 						}
 

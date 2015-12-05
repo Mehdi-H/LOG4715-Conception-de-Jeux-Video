@@ -123,7 +123,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: .764705896, g: .764705896, b: .450980395, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -314,7 +314,7 @@ GUIText:
   m_GameObject: {fileID: 1479269203}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Trackmapple Syrup Edition
+  m_Text: Track Path 3
   m_Anchor: 4
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 130}
@@ -326,7 +326,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283979864
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1479269205

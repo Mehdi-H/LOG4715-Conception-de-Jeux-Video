@@ -17,10 +17,10 @@ public class drawPosition : MonoBehaviour
     {
 		Cars = GameObject.Find("Cars").GetComponentsInChildren<Transform>() as Transform[];
 
-        foreach(Transform car in Cars)
+        /*foreach(Transform car in Cars)
         {
             Debug.Log(car.name);
-        }
+        }*/
 
         Transform[] children = joueur.GetComponentsInChildren<Transform>();
         foreach (Transform child in children)
