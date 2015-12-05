@@ -74,7 +74,6 @@ public class Jump : MonoBehaviour
 		{
 			flag = true;
 			grounded = true;
-			Debug.Log("Solé : " + grounded);
 		}
 	}
 
@@ -92,8 +91,6 @@ public class Jump : MonoBehaviour
 
 	IEnumerator delayedGrounding(float delay, bool isGrounded)
 	{
-		Debug.Log("Ah ? ...");
-
 		float count = 0;
 		while (!flag && count < delay)
 		{
@@ -104,11 +101,6 @@ public class Jump : MonoBehaviour
 		if (!flag)
 		{
 			grounded = isGrounded;
-			Debug.Log("... en l'air ! (" + grounded + ")");
-		}
-		else
-		{
-			Debug.Log("...à terre ! (" + grounded + ")");
 		}
 	}
 }

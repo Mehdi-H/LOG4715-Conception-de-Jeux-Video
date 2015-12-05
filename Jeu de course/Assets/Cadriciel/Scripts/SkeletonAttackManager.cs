@@ -11,11 +11,11 @@ public class SkeletonAttackManager : MonoBehaviour
 	// ==========================================
 
 	[SerializeField]
-	private long attenteDebutMS = 3000,
-		decalageGroupeMS = 5000;
+	private int attenteDebutSec = 3,
+		decalageGroupeSec = 5;
 
 	private bool go = false, attacking = false;
-	private Groupe dernierAttaquant = Groupe.DROITE;
+	private Groupe dernierAttaquant = Groupe.GAUCHE;
 
 	private Animation[] gauche, droite;
 
@@ -42,26 +42,25 @@ public class SkeletonAttackManager : MonoBehaviour
 	{
 		// === Temps d'attente au début de la course avant de lancer les animations ===
 
-		if (!go && watch.ElapsedMilliseconds > attenteDebutMS)
+		if (!go)
 		{
-			go = true;
-			watch.Stop();
-			watch.Reset();
+			if (watch.ElapsedMilliseconds > (attenteDebutSec * 1000))
+			{
+				go = true;
+				watch.Stop();
+				watch.Reset();
 
-			StartCoroutine(attack(gauche));
-
-			UnityEngine.Debug.Log("0. On peut attaquer");
+				StartCoroutine(attack(gauche));
+			}
 		}
 
 		// === Lancer des attaques en boucle ===
 
-		if (go)
+		else // go == true
 		{
 			// Pause entre 2 attaques finie :
-			if (!attacking && watch.ElapsedMilliseconds > decalageGroupeMS)
+			if (!attacking && watch.ElapsedMilliseconds > (decalageGroupeSec * 1000))
 			{
-				UnityEngine.Debug.Log("3. Attaque incomming : " + (dernierAttaquant == Groupe.GAUCHE ? Groupe.DROITE : Groupe.GAUCHE));
-
 				Animation[] prochainAttaquant = (dernierAttaquant == Groupe.GAUCHE ? droite : gauche);
 				dernierAttaquant = (dernierAttaquant == Groupe.GAUCHE ? Groupe.DROITE : Groupe.GAUCHE);
 
@@ -74,31 +73,27 @@ public class SkeletonAttackManager : MonoBehaviour
 
 	IEnumerator attack(Animation[] gr)
 	{
-		UnityEngine.Debug.Log("1. À l'attaque !");
-
 		attacking = true;
 
 		for (int i = 0; i < gr.Length; i++)
 		{
 			// Sort du sol :
-			gr[i].Play("OffGround");
+			gr[i].Play("offground");
 
 			// Attaque :
 			gr[i].PlayQueued("attack", QueueMode.CompleteOthers);
 
 			// Rentre dans le sol :
-			gr[i].PlayQueued("InGround", QueueMode.CompleteOthers);
+			gr[i].PlayQueued("inground", QueueMode.CompleteOthers);
 		}
 
-		float count = 5.5f;
+		int count = 6;
 		while (count > 0)
 		{
-			count -= 0.5f;
-			UnityEngine.Debug.Log("   count : " + count);
-            yield return new WaitForSeconds(0.5f);
+			count -= 1;
+            yield return new WaitForSeconds(1);
 		}
-
-		UnityEngine.Debug.Log("2. Attaque terminée ");
+		
 		attacking = false;
 		watch.Start();
 	}

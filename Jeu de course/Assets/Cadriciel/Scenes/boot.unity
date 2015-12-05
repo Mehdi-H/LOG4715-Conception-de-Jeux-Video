@@ -149,7 +149,7 @@ GUIText:
   m_GameObject: {fileID: 1200897201}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Trackmapple Syrup Edition
+  m_Text: Hello Jack
   m_Anchor: 4
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -225,7 +225,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: .764705896, g: .756174624, b: .455449849, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

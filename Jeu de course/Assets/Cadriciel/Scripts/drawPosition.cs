@@ -3,15 +3,19 @@ using System.Collections;
 
 public class drawPosition : MonoBehaviour
 {
-    //***Variables
-    public Transform joueur;
-    public Transform Cars;
+	//***Variables
+	[SerializeField]
+	public Transform joueur;
+	
+    public Transform[] Cars;
+
     Vector3 screenPos;
     private GUIStyle style = null;
     Color col;
 
     void Start()
     {
+		Cars = GameObject.Find("Cars").GetComponentsInChildren<Transform>() as Transform[];
 
         foreach(Transform car in Cars)
         {
