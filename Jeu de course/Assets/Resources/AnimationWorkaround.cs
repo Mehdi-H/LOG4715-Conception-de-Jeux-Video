@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AnimationWorkaround : MonoBehaviour
 {
-	private Vector3 initPos;
+	/*private Vector3 initPos;
 
 	private Transform bip01;
 	private Animation animation;
@@ -17,10 +17,10 @@ public class AnimationWorkaround : MonoBehaviour
 	
 	void Update ()
 	{
-		if (! animation.isPlaying)
+		if (!animation.isPlaying)
 		{
 			// Rester sous terre :
 			bip01.position = initPos;
 		}
-	}
+	}*/
 }

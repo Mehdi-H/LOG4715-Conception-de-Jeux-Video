@@ -7,7 +7,8 @@ public class MiniMapFollow : MonoBehaviour {
 	
 	//http://docs.unity3d.com/ScriptReference/MonoBehaviour.LateUpdate.html
 	//***Actualisation de la position de la camera suivant le joueur
-	void LateUpdate(){
+	void LateUpdate()
+	{
 		transform.position = new Vector3 (
 			joueur.position.x, 
 			transform.position.y,

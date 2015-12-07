@@ -1750,17 +1750,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replacements:
     items:
-    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 0}
+    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 3}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
-    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 0}
+    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 3}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
     - original: {fileID: 4800000, guid: eed5000546afeea48bdeeb5cf208c2e9, type: 3}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
-    - original: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
-      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 0}
-    - original: {fileID: 21, guid: 0000000000000000f000000000000000, type: 0}
-      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 0}
-    - original: {fileID: 22, guid: 0000000000000000f000000000000000, type: 0}
+    - original: {fileID: 4, guid: 0000000000000000f000000000000000, type: 3}
+      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 3}
+    - original: {fileID: 21, guid: 0000000000000000f000000000000000, type: 3}
+      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 3}
+    - original: {fileID: 22, guid: 0000000000000000f000000000000000, type: 3}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
 --- !u!4 &50654775
 Transform:
@@ -7644,7 +7644,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 217687241}
   - 111: {fileID: 217687242}
-  - 114: {fileID: 217687243}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -7690,18 +7689,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &217687243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1562517042}
-  m_GameObject: {fileID: 217687240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &219625973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9149,7 +9136,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 282730779}
   - 111: {fileID: 282730780}
-  - 114: {fileID: 282730781}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -9195,18 +9181,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &282730781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1896019451}
-  m_GameObject: {fileID: 282730778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &282830772
 GameObject:
   m_ObjectHideFlags: 0
@@ -11722,7 +11696,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 340529329}
   - 111: {fileID: 340529330}
-  - 114: {fileID: 340529331}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -11768,18 +11741,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &340529331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 996775232}
-  m_GameObject: {fileID: 340529328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &341118974
 GameObject:
   m_ObjectHideFlags: 0
@@ -14756,7 +14717,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 419421784}
   - 111: {fileID: 419421786}
-  - 114: {fileID: 419421785}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -14778,18 +14738,6 @@ Transform:
   - {fileID: 1555665480}
   m_Father: {fileID: 233953705}
   m_RootOrder: 0
---- !u!114 &419421785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1026891641}
-  m_GameObject: {fileID: 419421783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!111 &419421786
 Animation:
   m_ObjectHideFlags: 0
@@ -18165,7 +18113,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 516647185}
   - 111: {fileID: 516647186}
-  - 114: {fileID: 516647187}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -18211,18 +18158,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &516647187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1400742517}
-  m_GameObject: {fileID: 516647184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &517432671
 GameObject:
   m_ObjectHideFlags: 0
@@ -24805,7 +24740,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 745703689}
   - 111: {fileID: 745703690}
-  - 114: {fileID: 745703691}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -24851,18 +24785,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &745703691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 43877984}
-  m_GameObject: {fileID: 745703688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &751902267
 GameObject:
   m_ObjectHideFlags: 0
@@ -31691,7 +31613,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 898816734}
   - 111: {fileID: 898816735}
-  - 114: {fileID: 898816736}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -31737,18 +31658,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &898816736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 101735702}
-  m_GameObject: {fileID: 898816733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &899462717
 GameObject:
   m_ObjectHideFlags: 0
@@ -33775,7 +33684,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 940692965}
   - 111: {fileID: 940692966}
-  - 114: {fileID: 940692967}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -33821,18 +33729,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &940692967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1159304394}
-  m_GameObject: {fileID: 940692964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &941505711
 GameObject:
   m_ObjectHideFlags: 0
@@ -34547,7 +34443,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 957281404}
   - 111: {fileID: 957281405}
-  - 114: {fileID: 957281406}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -34593,18 +34488,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &957281406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1027440892}
-  m_GameObject: {fileID: 957281403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &959007438
 GameObject:
   m_ObjectHideFlags: 0
@@ -35097,7 +34980,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 3.91064394e-12
+      value: 3.24544601e-12
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
       propertyPath: m_LocalRotation.y
@@ -35105,7 +34988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -2.46702103e-10
+      value: 8.75058049e-15
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
       propertyPath: m_LocalRotation.w
@@ -36249,7 +36132,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1007487044}
   - 111: {fileID: 1007487045}
-  - 114: {fileID: 1007487046}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -36295,18 +36177,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &1007487046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1018847180}
-  m_GameObject: {fileID: 1007487043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1009118478
 GameObject:
   m_ObjectHideFlags: 0
@@ -37409,7 +37279,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1030736824}
   - 111: {fileID: 1030736825}
-  - 114: {fileID: 1030736826}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -37455,18 +37324,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &1030736826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1305421455}
-  m_GameObject: {fileID: 1030736823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1030863551
 GameObject:
   m_ObjectHideFlags: 0
@@ -51071,7 +50928,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1377709380}
   - 111: {fileID: 1377709381}
-  - 114: {fileID: 1377709382}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -51117,18 +50973,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &1377709382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074898938}
-  m_GameObject: {fileID: 1377709379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1379301327
 Prefab:
   m_ObjectHideFlags: 0
@@ -52468,7 +52312,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1419595818}
   - 111: {fileID: 1419595819}
-  - 114: {fileID: 1419595820}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -52514,18 +52357,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &1419595820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1267601512}
-  m_GameObject: {fileID: 1419595817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1420034915
 GameObject:
   m_ObjectHideFlags: 0
@@ -66135,8 +65966,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1866547310}
-  m_LocalRotation: {x: .5, y: .5, z: -.5, w: .5}
-  m_LocalPosition: {x: -173, y: 100, z: 2}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -230.399994, y: 100, z: 2}
   m_LocalScale: {x: .790956795, y: .790957034, z: .790957034}
   m_Children: []
   m_Father: {fileID: 1305879589}
@@ -66167,9 +65998,9 @@ Camera:
     serializedVersion: 2
     x: .850000024
     y: .600000024
-    width: .200000003
+    width: .144999996
     height: .25
-  near clip plane: .300000012
+  near clip plane: -149.800003
   far clip plane: 150
   field of view: 60
   orthographic: 1
@@ -66196,8 +66027,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0da36e12b9621429839167eec4bd2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joueur: {fileID: 481286550}
-  Cars: []
+  cars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1872953833
 GameObject:
   m_ObjectHideFlags: 0
@@ -66340,7 +66177,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: baec086904791744185aaa07a6cf55c2, type: 2}
   m_PrefabInternal: {fileID: 970742417}
   m_GameObject: {fileID: 1873886570}
-  m_LocalRotation: {x: 3.91064394e-12, y: -.00269625476, z: -2.46702103e-10, w: .999996364}
+  m_LocalRotation: {x: 3.24544601e-12, y: -.00269625476, z: 8.75058049e-15, w: .999996364}
   m_LocalPosition: {x: 2.28376961, y: .515365601, z: 22.8599548}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -70457,7 +70294,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1942098236}
   - 111: {fileID: 1942098237}
-  - 114: {fileID: 1942098238}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -70503,18 +70339,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &1942098238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1037553212}
-  m_GameObject: {fileID: 1942098235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1943193130
 GameObject:
   m_ObjectHideFlags: 0
@@ -72586,7 +72410,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2007741222}
   - 111: {fileID: 2007741223}
-  - 114: {fileID: 2007741224}
   m_Layer: 0
   m_Name: SkeletonWhiteDaggerShield
   m_TagString: Untagged
@@ -72632,18 +72455,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!114 &2007741224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 88e100678aecc994c95e34bbd89cfa7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 107058120}
-  m_GameObject: {fileID: 2007741221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5887a1fbbb0bc4a46ad6aec26e7cbf53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2008738022
 GameObject:
   m_ObjectHideFlags: 0
