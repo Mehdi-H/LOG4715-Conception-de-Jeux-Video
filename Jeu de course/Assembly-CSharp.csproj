@@ -74,6 +74,7 @@
      <Compile Include="Assets\Cadriciel\Scripts\drawPosition.cs" />
      <Compile Include="Assets\DesertFortressPack\Scripts\open_door.cs" />
      <Compile Include="Assets\Resources\AnimationWorkaround.cs" />
+     <Compile Include="Assets\Resources\DirectionInterface.cs" />
      <Compile Include="Assets\Sample Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\Sample Assets\Cameras\Scripts\AutoCam.cs" />
      <Compile Include="Assets\Sample Assets\Cameras\Scripts\FreeLookCam.cs" />
