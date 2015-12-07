@@ -624,7 +624,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7635b88f103897547b08df0071647ece, type: 2}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7635b88f103897547b08df0071647ece, type: 2}
       propertyPath: m_LocalScale.x
@@ -1750,17 +1750,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   replacements:
     items:
-    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 3}
+    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 0}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
-    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 3}
+    - original: {fileID: 23, guid: 0000000000000000f000000000000000, type: 0}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
     - original: {fileID: 4800000, guid: eed5000546afeea48bdeeb5cf208c2e9, type: 3}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
-    - original: {fileID: 4, guid: 0000000000000000f000000000000000, type: 3}
-      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 3}
-    - original: {fileID: 21, guid: 0000000000000000f000000000000000, type: 3}
-      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 3}
-    - original: {fileID: 22, guid: 0000000000000000f000000000000000, type: 3}
+    - original: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 0}
+    - original: {fileID: 21, guid: 0000000000000000f000000000000000, type: 0}
+      replacement: {fileID: 10705, guid: 0000000000000000f000000000000000, type: 0}
+    - original: {fileID: 22, guid: 0000000000000000f000000000000000, type: 0}
       replacement: {fileID: 4800000, guid: 301ff9ac12ffa4d43bc26ffbb2be17b2, type: 3}
 --- !u!4 &50654775
 Transform:
@@ -65951,7 +65951,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1866547311}
   - 20: {fileID: 1866547313}
-  - 114: {fileID: 1866547312}
   - 114: {fileID: 1866547314}
   m_Layer: 0
   m_Name: Minimap
@@ -65967,23 +65966,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1866547310}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -230.399994, y: 100, z: 2}
-  m_LocalScale: {x: .790956795, y: .790957034, z: .790957034}
+  m_LocalPosition: {x: -202.427582, y: 124.099998, z: 20.2999992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1305879589}
   m_RootOrder: 9
---- !u!114 &1866547312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1866547310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2a47e2874568c443b9e81d96ef39a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joueur: {fileID: 481286550}
 --- !u!20 &1866547313
 Camera:
   m_ObjectHideFlags: 0
@@ -65998,13 +65985,13 @@ Camera:
     serializedVersion: 2
     x: .850000024
     y: .600000024
-    width: .144999996
-    height: .25
-  near clip plane: -149.800003
+    width: .150000006
+    height: .280000001
+  near clip plane: -156.029999
   far clip plane: 150
   field of view: 60
   orthographic: 1
-  orthographic size: 374.899902
+  orthographic size: 299.799988
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -66027,14 +66014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0da36e12b9621429839167eec4bd2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  cars: []
 --- !u!1 &1872953833
 GameObject:
   m_ObjectHideFlags: 0
@@ -75138,7 +75118,7 @@ Transform:
   m_GameObject: {fileID: 2068927889}
   m_LocalRotation: {x: 0, y: .903977096, z: 0, w: -.427581072}
   m_LocalPosition: {x: -122.203217, y: 68.2918396, z: 35.7834167}
-  m_LocalScale: {x: 7.86000013, y: 4, z: 4}
+  m_LocalScale: {x: 7.86000013, y: 3.5, z: 4}
   m_Children:
   - {fileID: 541128884}
   - {fileID: 834509533}

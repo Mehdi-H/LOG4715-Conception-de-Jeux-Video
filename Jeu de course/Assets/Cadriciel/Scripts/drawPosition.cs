@@ -14,11 +14,12 @@ public class drawPosition : MonoBehaviour
     {
 		// Récupérer toutes les voitures :
 		Transform Cars = GameObject.Find("Cars").GetComponent<Transform>() as Transform;
-		cars = new Transform[Cars.childCount];
+		cars = new Transform[Cars.childCount-1];
 		int count = 0;
 		foreach(Transform car in Cars)
 		{
-			cars[count++] = car;
+			if (car.name != "Joueur 2")
+				cars[count++] = car;
 		}
 
 		col = new Color[cars.Length];
